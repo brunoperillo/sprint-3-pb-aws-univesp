@@ -1,5 +1,12 @@
 # Avaliação Sprint 3 - Programa de Bolsas Compass UOL / AWS e Univesp
 
+# Grupo 4
+
+Ana Vitoria Louro Navili
+Bruno Monserrat Perillo
+Diego Lopes da Silva
+Kelly Patricia Lopes Silva
+
 Avaliação da terceira sprint do programa de bolsas Compass UOL para formação em machine learning para AWS.
 
 ***
