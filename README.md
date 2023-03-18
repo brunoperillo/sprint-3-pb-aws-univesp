@@ -4,23 +4,45 @@ Avaliação da terceira sprint do programa de bolsas Compass UOL para formação
 
 ***
 
-## Execução (Código Fonte)
+## Objetivo 
 
-Execução em docker do projeto da Sprint 2, dentro da AWS Cloud.
+Criação de um API em Node.Js e executável em docker do projeto da Sprint 2, dentro da AWS Cloud.
 
-**Especificações**:
+**Introdução**:
 
-* A partir do projeto entregue na Sprint 2, subir o projeto NodeJS em docker na cloud AWS.
-* O grupo pode ficar livre quanto à estratégia adotada para executar o docker na AWS.
-* Exemplos de como executar:
-  * [Deploy de aplicações NodeJS à AWS com Docker | Diego Fernandes](https://youtu.be/kqBCHYf_adA)
-  * [Rodando e fazendo deploy do seu primeiro container docker em produção com o Amazon ECS do zero](https://youtu.be/me9SYyFoya8)
+O Projeto Sprint 3 trata-se da criação de um API (conjunto de instruções e padrões de programação que servem para fornecer dados e informações relevantes de uma determninada aplicação) utilizando servidores web e auxilio do docker(software usado para implantar aplicações dentro de containers virtuais) dentro da AWS Cloud (provedor de soluções em nuvem com entrega sob demanda, oferecendo serviços integrados e otimizados).
+
+## Indice
+
+- Projeto Sprint 2 
+- Arquivo docker para API
+- App.js e package.json implementam a API
+- Arquivo com passo a passo do projeto NodeJS em docker na cloud AWS
 
 
 
 ***
 
-## O que será avaliado?
+## Descrição 
+
+**Pré-requisitos**
+
+- Installe Node.js incluso Node Package Manager
+- Installe Docker
+- Installe VS CODE (opcional)
+- Tenha uma conta ativa na plataforma AWS Cloud
+- Projeto Sprint 2
+
+**Técnicas Utilizadas**
+
+- AWS (ECR, ECS)
+- Conhecimento em Docker
+- Conhecimento Node.JS
+- Conhecimento JavaScript
+
+
+
+
 
 - Uso do projeto da Sprint 2
 - Seguir as atividades na ordem proposta
