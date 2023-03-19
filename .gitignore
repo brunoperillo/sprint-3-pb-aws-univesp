@@ -1,3 +1,6 @@
+# Arquivo de texto
+*.docx 
+
 # Logs
 logs
 *.log
