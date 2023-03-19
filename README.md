@@ -38,7 +38,7 @@ As vantagens de utilizar o docker na AWS são diversas, e algumas delas é a fac
 Projeto em desenvolvimento para exposição na web da [Sprint 2][sprint2] através do deploy de um container docker na AWS Cloud, a figura a seguir representa o fluxograma da infraestrutura proposta neste projeto:
 
 
-![imagem fluxograma](https://raw.githubusercontent.com/Compass-pb-aws-2023-Univesp/sprint-3-pb-aws-univesp/grupo-3/assets/1_UvALqIe_qkUp2x8SmSiSwQ.webpgit)
+![imagem fluxograma](![1_UvALqIe_qkUp2x8SmSiSwQ](https://user-images.githubusercontent.com/125395133/226206896-869592eb-94a9-40ce-a9b1-9be4e1c093b6.PNG))
 
 
 
