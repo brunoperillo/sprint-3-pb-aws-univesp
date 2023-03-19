@@ -19,8 +19,10 @@ Criar um container com o Docker para executar o projeto da [Sprint 2][sprint2] e
 
 ##### Estrutura da aplicação com NodeJS:
 A partir do momento que o usuário acessa a URL raiz, ou `/`, da nossa aplicação, usamos a função `res.render('index')` do NodeJs para renderizar a página HTML contida na pasta `/src`.
+
 O app está escutando na porta `9000`, portando é necessário colocar `:9000` ao final da URL.
-![estrutura nodejs](src/img/nodeApp.PNG)
+
+[Estrutura do index.js](src/img/nodeApp.PNG)
 
 #### Execução em máquina local
   ```sh
@@ -30,7 +32,9 @@ O app está escutando na porta `9000`, portando é necessário colocar `:9000` a
 ### Construindo a imagem do container
 Estrutura do Dockerfile
 
-![imagem container](src/img/dockerfile.PNG)
+[Dockerfile](src/img/dockerfile.PNG)
+
+***
 
 ## Equipe
 | [<img src="https://avatars.githubusercontent.com/u/73674662?v=4" width=115><br><sub>Marcos Carvalho</sub>](https://github.com/onativo) | [<img src="https://avatars.githubusercontent.com/u/94749597?v=4" width=115><br><sub>O'Dhara Maggi</sub>](https://github.com/odharamaggi) | [<img src="https://avatars.githubusercontent.com/u/87142990?v=4" width=115><br><sub>Luciene Godoy</sub>](https://github.com/LucieneGodoy) | [<img src="https://avatars.githubusercontent.com/u/72028902?s=400&u=55ce73592997b191c7c04082c85ea2ee367f7e2a&v=4" width=115><br><sub>Luiz Renato Sassi</sub>](https://github.com/luizrsassi) |
