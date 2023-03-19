@@ -1,7 +1,28 @@
+# Avaliação Sprint 3 - Programa de Bolsas Compass UOL / AWS e Univesp
 
-```sh
-54.163.32.88:9000
-```
+Avaliação da segunda sprint do programa de bolsas [Compass UOL][compass] para formação em machine learning para [AWS][aws].
+
+***
+
+## Objetivo
+Este projeto é uma aplicação web, com implementação [docker][dockerwiki] para ser executada na nuvem da [AWS Cloud][aws]. O objetivo desta dockerização é facilitar o processo de implantação da aplicação em um ambiente escalável e replicável.
+
+## Introdução
+[Docker][dockerwiki] é um conjunto de produtos de [plataforma como serviço (PaaS)][pass] que usam [virtualização de nível de sistema operacional][virtualizacao] para entregar software em pacotes chamados contêineres. Os contêineres são isolados uns dos outros e agrupam seus próprios softwares, bibliotecas e arquivos de configuração. Eles podem se comunicar uns com os outros por meio de canais bem definidos. Todos os contêineres são executados por um único [kernel do sistema operacional][kernel] e, portanto, usam menos recursos do que as [máquinas virtuais][vm].
+
+A [Sprint 03][sprint3main] foi desenvolvida para implementar um contêiner docker a partir do projeto da [Sprint 02][sprint2main].
+
+## Técnicas e Ferramentas utilizadas
+- HTML5
+- Node.js
+- JavaScript
+- Docker
+- AWS
+
+## Dificuldades
+- Familiariedade no uso do Docker, AWS e Node.js.
+- Documentação do desenvolvimento do projeto.
+
 ***
 
 ## Equipe
