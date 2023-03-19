@@ -13,12 +13,25 @@ Avaliação da terceira sprint do programa de bolsas Compass UOL para formação
 
 ## Execução (Código Fonte)
 
-Execução em docker do projeto da Sprint 2, dentro da AWS Cloud.
+Criar um container com o Docker para executar o projeto da Sprint 2 em uma instância EC2 da AWS Cloud.
 
-**Especificações**:
+### Instalação
+  ```sh
+    npm install
+    npm install express express-handlebars
+  ```
+### Criando a aplicação com NodeJS
 
-* A partir do projeto entregue na Sprint 2, subir o projeto NodeJS em docker na cloud AWS.
-* O grupo pode ficar livre quanto à estratégia adotada para executar o docker na AWS.
-* Exemplos de como executar:
-  * [Deploy de aplicações NodeJS à AWS com Docker | Diego Fernandes](https://youtu.be/kqBCHYf_adA)
-  * [Rodando e fazendo deploy do seu primeiro container docker em produção com o Amazon ECS do zero](https://youtu.be/me9SYyFoya8)
+##### Estrutura da aplicação com NodeJS:
+A partir do momento que o usuário acessa a URL raiz, ou `/`, da nossa aplicação, usamos a função `res.render('index')` do NodeJs para renderizar a página HTML contida na pasta `/src`.
+O app está escutando na porta `9000`, portando é necessário colocar `:9000` ao final da URL.
+![estrutura nodejs](src/img/nodeApp.PNG)
+
+#### Execução em máquina local
+  ```sh
+    node index.js
+  ```
+
+### Construindo a imagem do container
+Estrutura do Dockerfile
+![imagem container](src/img/dockerfile.PNG)

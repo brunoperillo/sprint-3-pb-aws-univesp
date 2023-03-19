@@ -1,6 +1,5 @@
 const express = require('express')
 const handlebars = require('express-handlebars')
-const path = require('path')
 const app = express()
 
 app.use('/src', express.static(__dirname + '/src'))
@@ -21,7 +20,7 @@ app.get('/', (req, res) => {
   }
 )
 
-app.listen(3000, () => {
+app.listen(9000, () => {
     console.log('Está rodando!')
   }
 )
