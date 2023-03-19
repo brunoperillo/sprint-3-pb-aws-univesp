@@ -6,11 +6,22 @@ Avaliação da terceira sprint do programa de bolsas Compass UOL para formação
 
 ## Objetivo 
 
-Criação de um API em Node.Js e executável em docker do projeto da Sprint 2, dentro da AWS Cloud.
+Execução da API do projeto da Sprint 2 em containers docker, dentro da AWS Cloud.
 
 **Introdução**:
 
-O Projeto Sprint 3 trata-se da criação de um API (conjunto de instruções e padrões de programação que servem para fornecer dados e informações relevantes de uma determninada aplicação) utilizando servidores web e auxilio do docker(software usado para implantar aplicações dentro de containers virtuais) dentro da AWS Cloud (provedor de soluções em nuvem com entrega sob demanda, oferecendo serviços integrados e otimizados).
+O Projeto Sprint 3 trata-se da execução de um API (conjunto de instruções e padrões de programação que servem para fornecer dados e informações relevantes de uma determninada aplicação) da sprint 2 utilizando servidores web com o auxilio dos containers virtuais do docker (software usado para implantar aplicações dentro de containers virtuais) dentro da AWS Cloud (provedor de soluções em nuvem com entrega sob demanda, oferecendo serviços integrados e otimizados).
+
+Mas o que é e por quer utilizar o Docker para rodar a aplicação? 
+
+Para o funcionamento de um aplicativo ou serviço em diferentes sistemas a melhor solução é a utilização do software livre docker, e o porque é justamente devido ao seu propósito semelhante das maquinas virtuais porém com diferenças significativas,
+pois o docker é capaz de oferecer o Sistema operacional compartilhado em containers, maior desempenho, mais leve pois ocupa menos espaço no armazenamento e de rápida inicialização. 
+
+E por quer utilizar o docker na AWS Cloud?
+
+As vantagens de utilizar o docker na AWS são diversas, e algumas delas é a facilidade de portabilidade pois o docker permiti o empacotamento da aplicação em containers podendo ser executável tanto em local fixo quanto remotamente, em nuvem por exemplo, tornando mais fácil mover a aplicação para qualquer ambiente, gerenciamento simplificado pois o docker simplifica o gerenciamento de infraestrutura, pois cada container é uma unidade lógica, podendo ser gerenciada de acordo com o tipo de projeto, ou seja, pode facilmente atualizar, implantar ou remover containers de maneira consistente em toda sua infraestrutura; em resumo o uso do docker na AWS cloud ajuda e simplifica todo o processo de construção, implementação e desenvolvimento dos aplicativos.
+
+
 
 ## Indice
 
@@ -20,55 +31,55 @@ O Projeto Sprint 3 trata-se da criação de um API (conjunto de instruções e p
 - Arquivo com passo a passo do projeto NodeJS em docker na cloud AWS
 
 
-
 ***
 
 ## Descrição 
 
-**Pré-requisitos**
+Projeto em desenvolvimento para exposição na web da Sprint 2 através do deploy de um container docker na AWS Cloud, a figura a seguir representa o fluxograma da infraestrutura proposta neste projeto:
+
+<gi>
+
+
+
+
+
+
+
+
+## Ferramentas e Técnicas Utilizadas
 
 - Installe Node.js incluso Node Package Manager
 - Installe Docker
 - Installe VS CODE (opcional)
-- Tenha uma conta ativa na plataforma AWS Cloud
 - Projeto Sprint 2
-
-**Técnicas Utilizadas**
-
-- AWS (ECR, ECS)
+- Acesso AWS Cloud (ECR, ECS)
 - Conhecimento em Docker
 - Conhecimento Node.JS
-- Conhecimento JavaScript
 
 
 
 
+## Aplicação
 
-- Uso do projeto da Sprint 2
-- Seguir as atividades na ordem proposta
-- Subir códigos no git ao longo do desenvolvimento
-- Organização geral do código fonte
-  - Estrutura de pastas
-  - Estrutura da logica de negócio
-  - Divisão de responsabilidades em arquivos/pastas distintos
-  - Otimização do código fonte (evitar duplicações de código)
-- Objetividade do README.md
-- Modelo de organização da equipe para o desenvolvimento do projeto
-- Página criada com acesso online.
+Verifique o deploy deste projeto clicando <aqui>[editar-o-botão-aqui] ou acesse o endereço abaixo na barra de endereço do seu navegador de preferência.
+
+## Dificuldades Encontradas ao longo do Projeto
+
+Foram encontradas algumas dificuldades no processo de elaboração deste projeto/sprint, algumas dificuldades vivenciadas por exemplo foi a saída de um membro da equipe, familiaridade com a plataforma e criação de imagens no docker, documentação mais precisa no decorrer do projeto, naturalização com o sistema da amazon ECS, entre outras dificuldades não listadas.
+
+
+
+## Equipe
+
+| [https://avatars.githubusercontent.com/u/78061851?v=4](https://github.com/crobertocamilo)| [https://avatars.githubusercontent.com/u/81330043?v=4](https://github.com/belima93) | [https://avatars.githubusercontent.com/u/125395133?v=4](https://github.com/Adila02) |
+| :---: | :---: | :---: |:---: |
+
+
+
+
 
 ***
 
-## Entrega
 
-- Aceitar o convite do repositório da sprint-3-pb-aws-univesp;
-- **O trabalho deve ser feito em grupos de quatro pessoas**;
-  - **Podem ser repetidos** grupos da sprint anterior;
-- Criar uma branch no repositório com o formato grupo-número (Exemplo: grupo-1);
-- Subir o trabalho na branch com um README.md
-  - documentar detalhes sobre como a avaliação foi desenvolvida
-  - dificuldades conhecidas
-  - como utilizar o sistema
-  - 🔨 código fonte desenvolvido (Sugestão: pasta `src`)
-  - configuração nginx
-  - URL para acesso à página
-- O prazo de entrega é até às 12h do dia 20/03/2023 no repositório do github ([https://github.com/Compass-pb-aws-2023-Univesp/sprint-3-pb-aws-univesp](https://github.com/Compass-pb-aws-2023-Univesp/sprint-3-pb-aws-univesp)).
+
+
