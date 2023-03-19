@@ -37,8 +37,7 @@ As vantagens de utilizar o docker na AWS são diversas, e algumas delas é a fac
 
 Projeto em desenvolvimento para exposição na web da Sprint 2 através do deploy de um container docker na AWS Cloud, a figura a seguir representa o fluxograma da infraestrutura proposta neste projeto:
 
-<gi>
-
+*imagem do fluxograma sugerido pelo carlos
 
 
 
@@ -61,7 +60,7 @@ Projeto em desenvolvimento para exposição na web da Sprint 2 através do deplo
 
 ## Aplicação
 
-Verifique o deploy deste projeto clicando <aqui>[editar-o-botão-aqui] ou acesse o endereço abaixo na barra de endereço do seu navegador de preferência.
+Verifique o deploy deste projeto clicando <aqui>[editar-o-botão-aqui) ou acesse o endereço abaixo na barra de endereço do seu navegador de preferência.
 
 ## Dificuldades Encontradas ao longo do Projeto
 
@@ -71,8 +70,8 @@ Foram encontradas algumas dificuldades no processo de elaboração deste projeto
 
 ## Equipe
 
-| [https://avatars.githubusercontent.com/u/78061851?v=4](https://github.com/crobertocamilo)| [https://avatars.githubusercontent.com/u/81330043?v=4](https://github.com/belima93) | [https://avatars.githubusercontent.com/u/125395133?v=4](https://github.com/Adila02) |
-| :---: | :---: | :---: |:---: |
+| [<img src="https://avatars.githubusercontent.com/u/78061851?v=4" width=115><br><sub>Carlos Roberto</sub>](https://github.com/crobertocamilo) | [<img src="https://avatars.githubusercontent.com/u/81330043?v=4" width=115><br><sub>Bernardo Lima</sub>](https://github.com/belima93) | [<img src="https://avatars.githubusercontent.com/u/125395133?v=4" width=115><br><sub>Adila Mota</sub>](https://github.com/Adila02) |
+| :---: | :---: | :---: |
 
 
 
