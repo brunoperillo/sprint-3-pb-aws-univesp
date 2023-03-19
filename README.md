@@ -6,7 +6,7 @@ Avaliação da terceira sprint do programa de bolsas Compass UOL para formação
 
 ## Objetivo 
 
-Execução da API do projeto da Sprint 2 em containers docker, dentro da AWS Cloud.
+Execução da API do projeto da [Sprint 2][sprint2] em containers docker, dentro da AWS Cloud.
 
 ## Introdução:
 
@@ -25,7 +25,7 @@ As vantagens de utilizar o docker na AWS são diversas, e algumas delas é a fac
 
 ## Indice
 
-- Projeto Sprint 2 
+- [Sprint 2][sprint2] 
 - Arquivo docker para API
 - App.js e package.json implementam a API
 - Arquivo com passo a passo do projeto NodeJS em docker na cloud AWS
@@ -35,9 +35,9 @@ As vantagens de utilizar o docker na AWS são diversas, e algumas delas é a fac
 
 ## Descrição 
 
-Projeto em desenvolvimento para exposição na web da Sprint 2 através do deploy de um container docker na AWS Cloud, a figura a seguir representa o fluxograma da infraestrutura proposta neste projeto:
+Projeto em desenvolvimento para exposição na web da [Sprint 2][sprint2] através do deploy de um container docker na AWS Cloud, a figura a seguir representa o fluxograma da infraestrutura proposta neste projeto:
 
-*imagem do fluxograma sugerido pelo carlos
+
 
 
 
@@ -55,7 +55,7 @@ Projeto em desenvolvimento para exposição na web da Sprint 2 através do deplo
 - Conhecimento em Docker
 - Conhecimento Node.JS
 - Conhecimento JavaScript
-
+- Conhecimento HTML
 
 
 
@@ -80,6 +80,6 @@ Foram encontradas algumas dificuldades no processo de elaboração deste projeto
 
 ***
 
-
+[sprint2]: <https://github.com/Compass-pb-aws-2023-Univesp/sprint-2-pb-aws-univesp/tree/main>
 
 
