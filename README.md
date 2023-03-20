@@ -17,7 +17,7 @@ Avaliação da terceira sprint do programa de bolsas Compass UOL para formação
 
 Realizar execução em docker do projeto da Sprint 2, dentro da Nuvem AWS
 
-##  Desenvol
+##  Desenvolvimento
 
 
 Realizado a divisão das etapas da atividade solicitado através da ferramenta Trello.
