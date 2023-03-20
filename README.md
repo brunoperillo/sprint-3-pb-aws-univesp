@@ -62,7 +62,7 @@ Estrutura do Dockerfile
   *	Constatamos a sua criação;
   *	Construímos um container a partir da imagem criada; 
   * Verificamos sua execução.
->Os comandos usados estão [aqui](https://github.com/Compass-pb-aws-2023-Univesp/sprint-3-pb-aws-univesp/blob/grupo-1/awsPassos.md)]
+>Os comandos usados estão [aqui](https://github.com/Compass-pb-aws-2023-Univesp/sprint-3-pb-aws-univesp/blob/grupo-1/awsPassos.md)
 ***
 
 ## Equipe
