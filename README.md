@@ -1,25 +1,30 @@
 # Avaliação Sprint 3 - Programa de Bolsas Compass UOL / AWS e Univesp
 
-Avaliação da terceira sprint do programa de bolsas Compass UOL para formação em machine learning para AWS.
+Avaliação da terceira Sprint do Programa de bolsas Compass UOL para formação em machine learning para AWS.
 
 ***
 
 ## Objetivo 
 
-Execução da API do projeto da [Sprint 2][sprint2] em containers docker, dentro da AWS Cloud.
+Execução da API do projeto da [Sprint 2][sprint2] a partir de um containers Docker, dentro da AWS Cloud.
 
 ## Introdução:
 
-O Projeto Sprint 3 trata-se da execução de um API (conjunto de instruções e padrões de programação que servem para fornecer dados e informações relevantes de uma determninada aplicação) da sprint 2 utilizando servidores web com o auxilio dos containers virtuais do docker (software usado para implantar aplicações dentro de containers virtuais) dentro da AWS Cloud (provedor de soluções em nuvem com entrega sob demanda, oferecendo serviços integrados e otimizados).
+O Projeto Sprint 3 compreende:
+
+- A execução de uma API (conjunto de instruções e padrões de programação que servem para fornecer dados e informações relevantes de uma determinada aplicação), construída em NodeJS e Express a partir da aplicação da [Sprint-2](https://github.com/Compass-pb-aws-2023-Univesp/sprint-2-pb-aws-univesp);
+- A criação de um container Docker (software usado para implantar aplicações dentro de containers virtuais) com a API;
+- Sua disponibilização utilizando a AWS Cloud (provedor de soluções em nuvem com entrega sob demanda, oferecendo serviços integrados e otimizados) e sendo executada a partir do container gerado.
+
 
 **Mas o que é e por quer utilizar o Docker para rodar a aplicação?**
 
-Para o funcionamento de um aplicativo ou serviço em diferentes sistemas a melhor solução é a utilização do software livre docker, e o porque é justamente devido ao seu propósito semelhante das maquinas virtuais porém com diferenças significativas,
-pois o docker é capaz de oferecer o Sistema operacional compartilhado em containers, maior desempenho, mais leve pois ocupa menos espaço no armazenamento e de rápida inicialização. 
+Para o funcionamento de um aplicativo ou serviço em diferentes sistemas a melhor solução é a utilização das funcionalidades do Docker, e a razão é justamente devido ao seu propósito semelhante ao das maquinas virtuais porém com diferenças significativas,
+pois o docker é capaz de oferecer aplicações a partir em containers, maior desempenho, e mais leve (pois ocupa menos espaço no armazenamento) e de rápida inicialização. 
 
 **E por quer utilizar o docker na AWS Cloud?**
 
-As vantagens de utilizar o docker na AWS são diversas, e algumas delas é a facilidade de portabilidade pois o docker permiti o empacotamento da aplicação em containers podendo ser executável tanto em local fixo quanto remotamente, em nuvem por exemplo, tornando mais fácil mover a aplicação para qualquer ambiente, gerenciamento simplificado pois o docker simplifica o gerenciamento de infraestrutura, pois cada container é uma unidade lógica, podendo ser gerenciada de acordo com o tipo de projeto, ou seja, pode facilmente atualizar, implantar ou remover containers de maneira consistente em toda sua infraestrutura; em resumo o uso do docker na AWS cloud ajuda e simplifica todo o processo de construção, implementação e desenvolvimento dos aplicativos.
+As vantagens de utilizar o Docker na AWS são diversas, e dentre elas está a facilidade de portabilidade pois o Docker permite o "empacotamento" da aplicação em containers podendo ser executável tanto em local quanto remotamente, em nuvem por exemplo. Isto torna mais fácil mover a aplicação para qualquer ambiente, simplificando seu gerenciamento. O Docker simplifica o gerenciamento de infraestrutura ao tratar cada container como uma unidade lógica, podendo ser gerenciada de acordo com o tipo de projeto, ou seja, pode-se facilmente atualizar, implantar ou remover containers de maneira consistente em toda sua infraestrutura. Em resumo o uso do Docker na AWS Cloud ajuda e simplifica todo o processo de construção, implementação e desenvolvimento de aplicativos.
 
 
 
