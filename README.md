@@ -76,7 +76,9 @@ Para execução da aplicação em nuvem, é possível configurar um **instância
 
 A imagem Docker da API foi hospedada no serviço **ECR** da **AWS Cloud**. Um cluster **ECS** foi configurado para lançar instâncias **EC2** (máquinas virtuais) e executar a imagem da API.
 
-O passo-a-passo do deploy da imagem da API, configuração acesso ao ECR, criação e configuração do cluster ECS é apresentado no [tutorial](https://github.com/Compass-pb-aws-2023-Univesp/sprint-3-pb-aws-univesp/blob/grupo-3/files/criacao_configuracao_cluster_ECS.pdf), disponibilizado neste repositório. Acesse a API: **http://3.88.48.227:9000/**
+O passo-a-passo do deploy da imagem da API, configuração acesso ao ECR, criação e configuração do cluster ECS é apresentado no [tutorial](https://github.com/Compass-pb-aws-2023-Univesp/sprint-3-pb-aws-univesp/blob/grupo-3/files/criacao_configuracao_cluster_ECS.pdf), disponibilizado neste repositório. Acesse a API: **http://44.202.222.131:9000/**
+
+<img src='/assets/tela_api.png' width='60%'>
 
 *Vantagens deste método:*
 - o serviço ECS garante a disponibilidade da aplicação, se a instância ficar indisponível, outra é automaticamente lançada;
