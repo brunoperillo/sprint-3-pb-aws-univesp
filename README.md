@@ -17,7 +17,7 @@ A [Sprint 03][sprint3main] foi desenvolvida para implementar um contêiner docke
 Execução em docker do projeto da Sprint 2, dentro da AWS Cloud.
 ## Aplicação da execução do projeto
 
-* Trazer o HTML do projeto anterior e parametrizar o arquivo js para carregar o index.htmL.
+* Trazer o HTML do projeto anterior e criar o arquivo js para carregar o index.htmL.
 
 * Gerar uma imagem dentro do VS code 
 
