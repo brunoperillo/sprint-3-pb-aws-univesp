@@ -32,9 +32,9 @@ As vantagens de utilizar o Docker na AWS são diversas, e dentre elas está a fa
 
 Projeto em desenvolvimento para exposição na web da [Sprint 2][sprint2] através do deploy de um container docker na AWS Cloud, a figura a seguir representa o fluxograma da infraestrutura proposta neste projeto:
 
-
-<img src='https://user-images.githubusercontent.com/125395133/226207497-74f88742-5fe7-44e4-be5c-cee76300ceec.PNG' width='50%'>
-
+<p align="center">
+  <img src='https://user-images.githubusercontent.com/125395133/226207497-74f88742-5fe7-44e4-be5c-cee76300ceec.PNG' width='50%'>
+</p>
 
 
 ## Passos para execução do projeto 
@@ -78,7 +78,9 @@ A imagem Docker da API foi hospedada no serviço **ECR** da **AWS Cloud**. Um cl
 
 O passo-a-passo do deploy da imagem da API, configuração acesso ao ECR, criação e configuração do cluster ECS é apresentado no [tutorial](https://github.com/Compass-pb-aws-2023-Univesp/sprint-3-pb-aws-univesp/blob/grupo-3/files/criacao_configuracao_cluster_ECS.pdf), disponibilizado neste repositório. Acesse a API: **http://44.202.222.131:9000/**
 
-<img src='/assets/tela_api.png' width='60%'>
+<p align="center">
+<img src='/assets/tela_api.png' width='70%'>
+</p>
 
 *Vantagens deste método:*
 - o serviço ECS garante a disponibilidade da aplicação, se a instância ficar indisponível, outra é automaticamente lançada;
