@@ -58,7 +58,6 @@ Avaliação da terceira sprint do programa de bolsas Compass UOL para formação
 ***
 ## Grupo  2- Sprint 3
 
-
 ## Integrantes
 
 - Irati Gonçalves Mafra
@@ -70,3 +69,12 @@ Avaliação da terceira sprint do programa de bolsas Compass UOL para formação
 ## Objetivo
 
 Realizar execução em docker do projeto da Sprint 2, dentro da Nuvem AWS.
+
+## Planejamento 
+
+Realizado a divisão das etapas da atividade solicitado através da ferramenta Trello.
+
+![image](https://user-images.githubusercontent.com/117780664/226312264-4c6371e7-dd99-407e-8e68-9962a01334ed.png)
+
+***
+
