@@ -15,7 +15,7 @@ Criar um container com o Docker para executar o projeto da [Sprint 2][sprint2] e
     npm install
     npm install express express-handlebars
   ```
-### Criando a aplicação com NodeJS
+## Criando a aplicação com NodeJS
 
 ### Estrutura da aplicação com NodeJS:
 A partir do momento que o usuário acessa a URL raiz, ou `/`, da nossa aplicação, usamos a função `res.render('index')` do NodeJs para renderizar a página HTML contida na pasta `/src`.
