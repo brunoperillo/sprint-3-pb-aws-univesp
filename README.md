@@ -15,7 +15,10 @@ Criar um container com o Docker para executar o projeto da [Sprint 2][sprint2] e
     npm install
     npm install express express-handlebars
   ```
-### Criando a aplicação com NodeJS
+
+***
+
+## Criando a aplicação com NodeJS
 
 ### Estrutura da aplicação com NodeJS:
 A partir do momento que o usuário acessa a URL raiz, ou `/`, da nossa aplicação, usamos a função `res.render('index')` do NodeJs para renderizar a página HTML contida na pasta `/src`.
@@ -28,19 +31,20 @@ O app está escutando na porta `9000`, portando é necessário colocar `:9000` a
   ```sh
     node index.js
   ```
-
-### Construindo a imagem do container
+***
+## Construindo a imagem do container
 Estrutura do Dockerfile
 
 [Dockerfile](src/img/dockerfile.PNG)
 
-### Criando uma VPC na Console AWS:
+***
+## Criando uma VPC na Console AWS:
 
 1. Abra o Console da AWS e navegue até o serviço de VPC;
 2. Clique em "Criar VPC" e "VPC e muito mais".
 3. Mantenha todas as configurações automáticas que a AWS indica, apenas altere a quantidade de subnets públicas e privadas para uma 1 cada, respectivamente ([Estrutura Visual da Cloud](src/img/resourcemap.PNG)).
 
-### Criando instância na Console AWS:
+## Criando instância na Console AWS:
 
 1. Abra o Painel EC2 na Console AWS e clique em "Executar instância".
 2. Insira o nome da instância, tags e determine o sistema operacional.
@@ -54,15 +58,43 @@ Estrutura do Dockerfile
 6. Em "Configuração de Armazenamento" opte pela quantidade e tipo de volume que sua instância irá ter.
 7. Finalize executando a instância.
 
-### Desenvolvimento na AWS do Docker
-* Seguimos os passo seguintes:
-  * Construímos uma pasta para os arquivos html;
-  *	Clonamos o Branch grupo-1; 
-  *	Criamos a imagem; 
-  *	Constatamos a sua criação;
-  *	Construímos um container a partir da imagem criada; 
-  * Verificamos sua execução.
->Os comandos usados estão [aqui](https://github.com/Compass-pb-aws-2023-Univesp/sprint-3-pb-aws-univesp/blob/grupo-1/awsPassos.md)]
+***
+## Criando uma imagem e executando o container
+
+Nesta etapa vamos criar a imagem do nosso projeto e executar o container dentro da instância EC2.
+Para isso, vamos clonar este repositório para dentro da instância da AWS.
+
+Acessando a instância ec2 pelo terminal, primeiramente nos tornamos usuário root e atualizamos o sistema caso necessário. Em seguida criamos uma pasta onde ficará o conteúdo deste repositório e fazemos um `git clone`
+```
+  ssh -i chaveSSH.pem ec2-user@<IPv4>
+  sudo su
+  sudo yum update -y
+
+  /var/www/html2
+  git clone LinkGthub HTTPS
+
+ ```
+
+
+Nosso Dockerfile já está pronto neste repositório, então vamos apenas criar a imagem do projeto e executar o container expondo a porta 9000 e a flag `--restart unless-stopped` para que, em caso de o sistema precisar ser reiniciado, nosso container inicie junto com o sistema após o boot.
+
+ ```
+  docker build -t sprint3-node-image .
+  
+  docker images
+  
+  docker run -d -p 9000:9000 --restart unless-stopped --name sprint3-container <image-id>
+
+ ```
+
+Listando os containeres ativos, podemos verificar que ele está sendo executado.
+
+Acessamos nosso servidor através do IPv4 ou DNS da instância pela porta `:9000`
+
+```
+  docker ps
+```
+
 ***
 
 ## Equipe
