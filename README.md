@@ -51,8 +51,8 @@ Estrutura do Dockerfile
 - Selecione a subnet pública
 - Habilite o serviço "Atribuir automaticamente um IP público"
 - Crie um novo grupo de segurança e acrescente o acesso a porta 9000 ([Security Group](src/img/securitygroup.PNG)).
-7. Em "Configuração de Armazenamento" opte pela quantidade e tipo de volume que sua instância irá ter.
-8. Finalize executando a instância.
+6. Em "Configuração de Armazenamento" opte pela quantidade e tipo de volume que sua instância irá ter.
+7. Finalize executando a instância.
 ***
 
 ## Equipe
