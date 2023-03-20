@@ -28,16 +28,6 @@ As vantagens de utilizar o Docker na AWS são diversas, e dentre elas está a fa
 
 
 
-## Indice
-
-- [Sprint 2][sprint2] 
-- Arquivo docker para API
-- App.js e package.json implementam a API
-- Arquivo com passo a passo do projeto NodeJS em docker na cloud AWS
-
-
-
-
 ## Descrição 
 
 Projeto em desenvolvimento para exposição na web da [Sprint 2][sprint2] através do deploy de um container docker na AWS Cloud, a figura a seguir representa o fluxograma da infraestrutura proposta neste projeto:
@@ -47,9 +37,18 @@ Projeto em desenvolvimento para exposição na web da [Sprint 2][sprint2] atrav�
 
 
 
+## Passos para execução do projeto 
+
+1. Conversão da aplicação HTML/JS (Validador de dados) desenvolvida nas Sprints anteriores numa API utilizando NodeJS e Express. O arquivo [package.json](https://github.com/Compass-pb-aws-2023-Univesp/sprint-3-pb-aws-univesp/blob/grupo-3/package.json), enquanto o arquivo principal da API é o [app.js](https://github.com/Compass-pb-aws-2023-Univesp/sprint-3-pb-aws-univesp/blob/grupo-3/scr/app.js), que carrega o index.html na rota "/";
+
+2. Criação de uma imagem de container a partir das configurações do [Dockerfile](https://github.com/Compass-pb-aws-2023-Univesp/sprint-3-pb-aws-univesp/blob/grupo-3/Dockerfile)
+
+3. Upload da imagem num repositório para imagens Docker (foram utilizadas duas alternativas, o repositório gratuito [Dockerhub](https://hub.docker.com/repository/docker/crobertocamilo/compass-aws-ml_sprint3-grupo3/general), e Amazon ECR, serviço da AWS para hospedar imagens);
+
+4. Utilizando a infraestrutura da AWS, conforme detalhado a seguir.
 
 
-## Ferramentas e Técnicas Utilizadas
+## Ferramentas e Tecnologias Utilizadas
 
 - Install Node.js incluso Node Package Manager
 - Install Docker
@@ -62,14 +61,32 @@ Projeto em desenvolvimento para exposição na web da [Sprint 2][sprint2] atrav�
 - Conhecimento HTML
 
 
+## Desenvolvimento - Método A: Deploy da API no Dockerhub e sua execução em instâncias EC2
 
-## Aplicação
+A imagem da API foi hospedada num repositório do [**Dockerhub**](https://hub.docker.com/repository/docker/crobertocamilo/compass-aws-ml_sprint3-grupo3/general), que permite o deploy gratuito e público de imagens Docker. Desta forma, é possível realizar o download e execução de seu container simplesmente executando o comando **docker run** em qualquer máquina.
 
-Verifique o deploy deste projeto clicando <aqui>(editar-o-botão-aqui) ou acesse o endereço abaixo na barra de endereço do seu navegador de preferência.
+Para execução da aplicação em nuvem, é possível configurar um **instância EC2**, instalar o Docker e executar a aplicação. Estes passos podem ser feitos a partir deste [script](https://github.com/Compass-pb-aws-2023-Univesp/sprint-3-pb-aws-univesp/blob/grupo-3/files/script_ec2_dockerhub.sh), e uma vez que a máquina estiver online na AWS, a API já estará disponível em seu IP:9000
+
+*Vantagens deste método:*
+- implementação simples: a imagem pode ser baixada e executada de forma equivalente à qualquer imagem Docker;
+- menor custo ao utilizar essencialmente só o serviço EC2.
+
+
+## Desenvolvimento - Método B: Cluster ECS com deploy da API no ECR
+
+A imagem Docker da API foi hospedada no serviço **ECR** da **AWS Cloud**. Um cluster **ECS** foi configurado para lançar instâncias **EC2** (máquinas virtuais) e executar a imagem da API.
+
+O passo-a-passo do deploy da imagem da API, configuração acesso ao ECR, criação e configuração do cluster ECS é apresentado no [tutorial](https://github.com/Compass-pb-aws-2023-Univesp/sprint-3-pb-aws-univesp/blob/grupo-3/files/criacao_configuracao_cluster_ECS.pdf), disponibilizado neste repositório. Acesse a API: **http://3.88.48.227:9000/**
+
+*Vantagens deste método:*
+- o serviço ECS garante a disponibilidade da aplicação, se a instância ficar indisponível, outra é automaticamente lançada;
+- é possível configurar o aumento no número de máquinas oferecendo a aplicação (escalabilidade), para tratar picos de demanda;
+- sigilo e segurança do código, pois está restrito ao ambiente da AWS Cloud.
+
 
 ## Dificuldades Encontradas ao longo do Projeto
 
-Foram encontradas algumas dificuldades no processo de elaboração deste projeto/sprint, algumas dificuldades vivenciadas por exemplo foi a saída de um membro da equipe, familiaridade com a plataforma e criação de imagens no docker, documentação mais precisa no decorrer do projeto, naturalização com o sistema da amazon ECS, entre outras dificuldades não listadas.
+Foram encontradas algumas dificuldades no processo de elaboração deste projeto/sprint. Algumas dificuldades vivenciadas por exemplo, foi a saída de um membro da equipe, familiaridade com a plataforma e criação de imagens no docker, documentação mais precisa no decorrer do projeto, naturalização com o sistema da amazon ECS, entre outras dificuldades não listadas.
 
 
 
@@ -78,12 +95,16 @@ Foram encontradas algumas dificuldades no processo de elaboração deste projeto
 | [<img src="https://avatars.githubusercontent.com/u/78061851?v=4" width=115><br><sub>Carlos Roberto</sub>](https://github.com/crobertocamilo) | [<img src="https://avatars.githubusercontent.com/u/81330043?v=4" width=115><br><sub>Bernardo Lima</sub>](https://github.com/belima93) | [<img src="https://avatars.githubusercontent.com/u/125395133?v=4" width=115><br><sub>Adila Mota</sub>](https://github.com/Adila02) |
 | :---: | :---: | :---: |
 
+Atribuições no projeto:
 
+Todos participaram de todo o processo de desenvolvimento, mas o foco das atribuições foi:
 
+- Adila: Elaboração do Readme e estudo sobre API e Docker
+- Bernardo: Estudo e construção do cluster ECS, configurações de acesso e deploy no ECR (Método B)
+- Carlos: Implementação da aplicação como API node, deploy no Dockerhub (Método A)
 
 
 ***
 
 [sprint2]: <https://github.com/Compass-pb-aws-2023-Univesp/sprint-2-pb-aws-univesp/tree/main>
-
 
