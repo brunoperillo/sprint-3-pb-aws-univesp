@@ -66,11 +66,12 @@ Avaliação da terceira sprint do programa de bolsas Compass UOL para formação
 
 ***
 
-## Objetivo
+##  Objetivo
 
-Realizar execução em docker do projeto da Sprint 2, dentro da Nuvem AWS.
+Realizar execução em docker do projeto da Sprint 2, dentro da Nuvem AWS
 
-## Planejamento 
+##  Desenvol
+
 
 Realizado a divisão das etapas da atividade solicitado através da ferramenta Trello.
 
@@ -85,3 +86,10 @@ Realizado a divisão das etapas da atividade solicitado através da ferramenta T
 - HTML
 -  JavaScript
 
+## Exeução
+
+
+
+## Conclusão
+
+Estrutura do DockerfileName
