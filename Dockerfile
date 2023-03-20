@@ -5,9 +5,11 @@ FROM node:14-alpine
 WORKDIR /src
 
 # faz a cópia dos arquivos package.json e o package-lock.json para dentro do container
-COPY package*.json ./
+COPY package*.json .
 
 RUN npm install
+
+RUN npm install express-handlebars
 
 # Copia todo o diretório atual para o container
 COPY . .
@@ -16,3 +18,4 @@ EXPOSE 3000
 
 # Inicia a aplicação pelo comando start, definido no package.json
 CMD ["npm", "start"]
+
