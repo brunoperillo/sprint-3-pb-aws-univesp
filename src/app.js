@@ -16,12 +16,7 @@ app.listen(PORT, function(){
     console.log(`API rodando na porta ${PORT}`);
 });
 
-//Definie que a rota "/" deve retornar o arquivo index.html
+//Define que a rota "/" deve retornar o arquivo index.html
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '.', '../index.html'));
 });
-
-/* app.get('/script.js', function(req, res) {
-    res.sendFile(path.join(__dirname, '.', 'script.js'));
-});
- */
