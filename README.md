@@ -34,6 +34,25 @@ Estrutura do Dockerfile
 
 [Dockerfile](src/img/dockerfile.PNG)
 
+### Criando uma VPC na Console AWS:
+
+1. Abra o Console da AWS e navegue até o serviço de VPC;
+2. Clique em "Criar VPC" e "VPC e muito mais".
+3. Mantenha todas as configurações automáticas que a AWS indica, apenas altere a quantidade de subnets públicas e privadas para uma 1 cada, respectivamente ([Estrutura Visual da Cloud](src/img/resourcemap.PNG)).
+
+### Criando instância na Console AWS:
+
+1. Abra o Painel EC2 na Console AWS e clique em "Executar instância".
+2. Insira o nome da instância, tags e determine o sistema operacional.
+3. No campo "Tipo de instância" faça a escolha da opção "t2.micro".
+4. Insira ou crie par de chaves.
+5. Edite a "Configurações de rede" da seguinte forma:
+- Vincule a VPC criada anteriormente 
+- Selecione a subnet pública
+- Habilite o serviço "Atribuir automaticamente um IP público"
+- Crie um novo grupo de segurança e acrescente o acesso a porta 9000 ([Security Group](src/img/securitygroup.PNG)).
+7. Em "Configuração de Armazenamento" opte pela quantidade e tipo de volume que sua instância irá ter.
+8. Finalize executando a instância.
 ***
 
 ## Equipe
