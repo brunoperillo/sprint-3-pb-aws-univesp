@@ -17,7 +17,7 @@ Criar um container com o Docker para executar o projeto da [Sprint 2][sprint2] e
   ```
 ### Criando a aplicação com NodeJS
 
-##### Estrutura da aplicação com NodeJS:
+### Estrutura da aplicação com NodeJS:
 A partir do momento que o usuário acessa a URL raiz, ou `/`, da nossa aplicação, usamos a função `res.render('index')` do NodeJs para renderizar a página HTML contida na pasta `/src`.
 
 O app está escutando na porta `9000`, portando é necessário colocar `:9000` ao final da URL.
@@ -53,6 +53,16 @@ Estrutura do Dockerfile
 - Crie um novo grupo de segurança e acrescente o acesso a porta 9000 ([Security Group](src/img/securitygroup.PNG)).
 6. Em "Configuração de Armazenamento" opte pela quantidade e tipo de volume que sua instância irá ter.
 7. Finalize executando a instância.
+
+### Desenvolvimento na AWS do Docker
+* Seguimos os passo seguintes:
+  * Construímos uma pasta para os arquivos html;
+  *	Clonamos o Branch grupo-1; 
+  *	Criamos a imagem; 
+  *	Constatamos a sua criação;
+  *	Construímos um container a partir da imagem criada; 
+  * Verificamos sua execução.
+>Os comandos usados estão [aqui](https://github.com/Compass-pb-aws-2023-Univesp/sprint-3-pb-aws-univesp/blob/grupo-1/awsPassos.md)]
 ***
 
 ## Equipe
