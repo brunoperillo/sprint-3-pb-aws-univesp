@@ -77,4 +77,11 @@ Realizado a divisão das etapas da atividade solicitado através da ferramenta T
 ![image](https://user-images.githubusercontent.com/117780664/226312264-4c6371e7-dd99-407e-8e68-9962a01334ed.png)
 
 ***
+##  Ferramentas e Tecnologias utilizadas
+
+- Docker
+- Nuvem AWS
+- NodeJS
+- HTML
+-  JavaScript
 
