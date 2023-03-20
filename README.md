@@ -50,3 +50,23 @@ Execução em docker do projeto da Sprint 2, dentro da AWS Cloud.
   - configuração nginx
   - URL para acesso à página
 - O prazo de entrega é até às 12h do dia 20/03/2023 no repositório do github ([https://github.com/Compass-pb-aws-2023-Univesp/sprint-3-pb-aws-univesp](https://github.com/Compass-pb-aws-2023-Univesp/sprint-3-pb-aws-univesp)).
+
+# Avaliação Sprint 3 - Programa de Bolsas Compass UOL / AWS e Univesp
+
+Avaliação da terceira sprint do programa de bolsas Compass UOL para formação em machine learning para AWS.
+
+***
+## Grupo  2- Sprint 3
+
+
+## Integrantes
+
+- Irati Gonçalves Mafra
+- Marcio Brunelli
+- Viviane Silva Alves
+
+***
+
+## Objetivo
+
+Realizar execução em docker do projeto da Sprint 2, dentro da Nuvem AWS.
