@@ -15,9 +15,7 @@ const telefone = document.getElementById("number").value
   //essa classe verifica se o uer digitou um email padrão
 class CheckEmail{
   static isEmail(email){
-    let emailRegex = new RegExp (/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))\@[a-zA-Z]+\.(?<![\w\d])[\.com|\.br|\.edu|\.org|\.net]{2,4}(?![\w\d])$/)
-    // let domainRegex = new RegExp (/(?<![\w\d])(.com|.br|.edu|.org|.net){2,4}(?![\w\d])$/)
-    // let nameRegex = new RegExp (/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))/)
+    let emailRegex = new RegExp (/^[a-zA-Z0-9._-]+@[a-zA-Z0-9_-]+\.(com|br|edu|org|net)$/)
     return (emailRegex.test(email))
   }
 }
