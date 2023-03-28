@@ -17,6 +17,10 @@ Avaliação da terceira sprint do programa de bolsas Compass UOL para formação
 
 Realizar execução em docker do projeto da Sprint 2, dentro da Nuvem AWS
 
+## Intro
+
+A avaliação proposta da Sprint 03 foi realizar a execução em docker utilizando o projeto entregue da sprint anterior (sprint2), dentro da Nuvem AWS.
+
 ##  Desenvolvimento
 
 
@@ -50,7 +54,7 @@ Estrutura do DockerfileName
 
 [Sistema de Validação](http://3.94.120.75:9000)
 
-![image](https://user-images.githubusercontent.com/117780664/228310471-3024c878-6790-4bd6-babe-eb89cfd10b04.png)
+
 
 
 
