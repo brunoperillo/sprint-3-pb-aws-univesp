@@ -48,7 +48,7 @@ Estrutura do DockerfileName
 [Dockerfile](https://github.com/Compass-pb-aws-2023-Univesp/sprint-3-pb-aws-univesp/blob/grupo-2/Dockerfile)
 
 
-## Conclusão
+## Resul
 
 ###   Aplicação do Sistema de Validação 
 
