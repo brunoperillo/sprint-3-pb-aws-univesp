@@ -41,6 +41,6 @@ Estrutura do DockerfileName
 
 ###   Aplicação do Sistema de Validação 
 
-[Sistema de Validação](http://54.87.226.93:9000/)
+[Sistema de Validação](http://3.94.120.75:9000)
 
 
